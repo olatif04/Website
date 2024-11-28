@@ -34,11 +34,11 @@ body {
 .hero h1 {
     font-size: 3rem;
     font-weight: 600;
-    margin-bottom: 4px; /* Add space below the <h1> */
+    margin-bottom: 20px; /* Space between <h1> and <p> */
 }
 
 .hero p {
-    margin-bottom: 40px; /* Adjust spacing for the <p> */
+    margin-bottom: 20px; /* Space between <p> and the button */
     font-size: 1.2rem;
 }
 
