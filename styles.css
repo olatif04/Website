@@ -24,7 +24,7 @@ body {
 }
 
 .hero-content {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    background-color: rgba(0, 0, 0, 0.691); /* Semi-transparent dark background */
     padding: 40px 20px; /* Default padding */
     border-radius: 8px;
     max-width: 600px; /* Default width */
@@ -37,7 +37,7 @@ body {
 }
 
 .hero p {
-    margin: 20px 0;
+    margin: 8px 0;
     font-size: 1.2rem;
 }
 
