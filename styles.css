@@ -24,10 +24,10 @@ body {
 }
 
 .hero-content {
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent dark background */
-    padding: 40px 20px; /* Adjust padding as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    padding: 40px 20px; /* Default padding */
     border-radius: 8px;
-    max-width: 600px;
+    max-width: 600px; /* Default width */
     text-align: center;
 }
 
@@ -55,6 +55,7 @@ body {
 .cta-button:hover {
     background-color: #f8c800;
 }
+
 /* Quranic Ayah Section */
 .quran-ayah {
     padding: 40px 20px; /* Padding on top and bottom */
@@ -73,25 +74,24 @@ body {
     max-width: 900px;
     width: 100%;
     color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
 }
 
 .ayah-image {
-    margin-bottom: 30px; /* Padding below the image */
-    width: 100%; /* Ensure the container takes the full width */
-    max-width: 100%; /* Prevent the image from stretching beyond the container */
+    margin-bottom: 30px; /* Space below the image */
+    width: 100%; /* Full width for responsiveness */
+    max-width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .ayah-image img {
-    width: 100%; /* Make image responsive */
+    width: 100%; /* Responsive image width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px;
-    object-fit: cover; /* Ensure image covers the container, cropping as necessary */
-    max-width: 100%; /* Prevent horizontal overflow */
-    max-height: 600px; /* Limit image height if needed */
-    margin-bottom: 5px; /* Space between image and text */
+    object-fit: cover; /* Cover container */
+    max-height: 600px; /* Limit height */
+    margin-bottom: 10px; /* Space below image */
 }
 
 .ayah-text {
@@ -100,7 +100,7 @@ body {
     line-height: 1.8;
     font-weight: 500;
     letter-spacing: 0.5px;
-    text-align: center; /* Center-align the text */
+    text-align: center; /* Center text */
 }
 
 .ayah-text em {
@@ -116,7 +116,6 @@ body {
     color: #ffffff;
     margin-top: 10px;
 }
-
 
 /* Contact Section */
 .contact {
@@ -163,4 +162,47 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Hero Section Adjustments */
+    .hero-content {
+        max-width: 90%; /* Narrower width on smaller screens */
+        padding: 30px 15px; /* Reduce padding for smaller devices */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Smaller font for title */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Smaller font for subtitle */
+    }
+
+    /* Quranic Ayah Section Adjustments */
+    .ayah-container {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .ayah-image img {
+        max-height: 400px; /* Limit image height on mobile */
+    }
+
+    .ayah-text em {
+        font-size: 1.5rem; /* Smaller emphasized text */
+    }
+
+    .ayah-translation {
+        font-size: 0.9rem; /* Smaller translation font size */
+    }
+
+    /* Contact Section Adjustments */
+    .contact h2 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .contact p {
+        font-size: 1rem; /* Smaller font for paragraph */
+    }
 }
