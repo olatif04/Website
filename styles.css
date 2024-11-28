@@ -38,7 +38,7 @@ body {
 }
 
 .hero p {
-    margin: 70px 0; /* Adjust spacing for the <p> */
+    margin-bottom: 40px; /* Adjust spacing for the <p> */
     font-size: 1.2rem;
 }
 
